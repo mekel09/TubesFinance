@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/dbFinance</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <mapping class="com.example.tubespbol_finance.Entitas.CategoryEntity"/>
+      <mapping class="com.example.tubespbol_finance.Entitas.PembukuanEntity"/>
+    <mapping class="com.example.tubespbol_finance.Entitas.SaldoEntity"/>
+    <mapping class="com.example.tubespbol_finance.Entitas.TipeuserEntity"/>
+    <mapping class="com.example.tubespbol_finance.Entitas.UserEntity"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

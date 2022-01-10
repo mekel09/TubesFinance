@@ -1,6 +1,8 @@
 module com.example.tubespbol_finance {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.persistence;
+    requires org.hibernate.orm.core;
 
 
     opens com.example.tubespbol_finance to javafx.fxml;
