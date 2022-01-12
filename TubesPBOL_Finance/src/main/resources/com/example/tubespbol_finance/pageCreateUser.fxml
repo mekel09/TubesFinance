@@ -76,7 +76,7 @@
             <Insets top="10.0" />
          </padding>
       </HBox>
-      <Button fx:id="btnBuatAkun" mnemonicParsing="false" onAction="#btnBuatAkunClicked" prefHeight="25.0" prefWidth="146.0" text="Buat Akun" textAlignment="CENTER">
+      <Button fx:id="btnBuatAkun" mnemonicParsing="false" onAction="#btnBuatAkunClicked" prefHeight="26.0" prefWidth="293.0" text="Buat Akun" textAlignment="CENTER">
          <VBox.margin>
             <Insets />
          </VBox.margin>

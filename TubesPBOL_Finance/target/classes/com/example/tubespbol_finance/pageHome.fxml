@@ -4,14 +4,29 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tubespbol_finance.Controller.HomeController">
    <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnPembukuanClicked" text="Lihat Pembukuan" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnUserClicked" text="Lihat User" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnExitClicked" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
       <Label text="Input Pembukuan" />
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
@@ -44,6 +59,29 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </VBox>
+            <VBox prefHeight="144.0" prefWidth="283.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="283.0" text="Total Saldo" textAlignment="CENTER">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Rp.">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tfJumlahSaldo" text="0">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
          </children>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
@@ -55,6 +93,7 @@
                     <columns>
                       <TableColumn fx:id="colNamaPemasukan" prefWidth="75.0" text="Nama" />
                       <TableColumn fx:id="colJumlahPemasukan" prefWidth="75.0" text="Jumlah" />
+                        <TableColumn fx:id="colKeteranganPemasukkan" prefWidth="75.0" text="Keterangan" />
                     </columns>
                   </TableView>
                </children>
@@ -69,6 +108,7 @@
                      <columns>
                         <TableColumn fx:id="colNamaPengeluaran" prefWidth="75.0" text="Nama" />
                         <TableColumn fx:id="colJumlahPengeluaran" prefWidth="75.0" text="Jumlah" />
+                        <TableColumn fx:id="colKeteranganPengeluaran" prefWidth="75.0" text="Keterangan" />
                      </columns>
                   </TableView>
                </children>

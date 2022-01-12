@@ -5,18 +5,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tubespbol_finance.Controller.UserController">
    <children>
-      <TableView prefHeight="444.0" prefWidth="600.0">
+      <TableView fx:id="tvUser" prefHeight="444.0" prefWidth="600.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="75.0" text="Username" />
-            <TableColumn prefWidth="75.0" text="Nama" />
-            <TableColumn prefWidth="75.0" text="Alamat" />
-            <TableColumn prefWidth="75.0" text="Telepon" />
-            <TableColumn prefWidth="93.0" text="Tanggal Lahir" />
-            <TableColumn prefWidth="111.0" text="Email" />
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colUsername" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="colNama" prefWidth="75.0" text="Nama" />
+            <TableColumn fx:id="colAlamat" prefWidth="75.0" text="Alamat" />
+            <TableColumn fx:id="colTelepon" prefWidth="75.0" text="Telepon" />
+            <TableColumn fx:id="colTanggalLahir" prefWidth="94.0" text="Tanggal Lahir" />
+            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="94.0" text="Email" />
+            <TableColumn fx:id="colKeterangan" prefWidth="91.0" text="Keterangan" />
         </columns>
       </TableView>
    </children>

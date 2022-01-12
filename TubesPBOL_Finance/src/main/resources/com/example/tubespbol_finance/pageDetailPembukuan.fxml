@@ -6,15 +6,14 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tubespbol_finance.Controller.DetailPembukuanController">
    <children>
       <Label text="Pembukuan" />
-      <TableView prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tvPembukuan" prefHeight="364.0" prefWidth="580.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Nama" />
-          <TableColumn prefWidth="75.0" text="Jumlah" />
-            <TableColumn prefWidth="75.0" text="Kategori" />
+          <TableColumn fx:id="colNama" prefWidth="75.0" text="Nama" />
+          <TableColumn fx:id="colJumlah" prefWidth="75.0" text="Jumlah" />
+            <TableColumn fx:id="colKategori" prefWidth="75.0" text="Kategori" />
         </columns>
       </TableView>
    </children>

@@ -1,11 +1,15 @@
 package com.example.tubespbol_finance.Controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
-public class CreateUserController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class CreateUserController implements Initializable {
     public TextField tfUsername;
     public TextField tfPassword;
     public TextField tfNama;
@@ -15,6 +19,13 @@ public class CreateUserController {
     public TextField tfEmail;
     public Button btnBuatAkun;
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
+
     public void btnBuatAkunClicked(ActionEvent actionEvent) {
     }
+
+
 }
