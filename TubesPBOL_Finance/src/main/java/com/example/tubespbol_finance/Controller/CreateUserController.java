@@ -3,6 +3,7 @@ package com.example.tubespbol_finance.Controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
@@ -17,11 +18,13 @@ public class CreateUserController implements Initializable {
     public TextField tfTelepon;
     public DatePicker dpTanggalLahir;
     public TextField tfEmail;
+    public ComboBox cbUser;
     public Button btnBuatAkun;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        cbUser.getItems().addAll("Standart","Premium");
     }
 
     public void btnBuatAkunClicked(ActionEvent actionEvent) {
